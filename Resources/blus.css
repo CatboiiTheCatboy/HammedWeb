@@ -1,8 +1,12 @@
+		@font-face {
+			font-family: EM;
+			src: url(earthsmightiest.ttf);
+		}
 		body{
 			font-size: larger;
 			color: #019bdd;
 			background: white;
-			font-family: "Earth's Mightiest";
+			font-family: "EM";
 		}
 		#bar {
 			display: flex;
@@ -18,10 +22,13 @@
 		}
 		#main {
 			display: flex;
+			justify-content: center;
 		}
 
 		iframe {
 			border: none;
+			margin-right: 50px; 
+			margin-left: 50px; 
 		}
 	
 		.labels{
