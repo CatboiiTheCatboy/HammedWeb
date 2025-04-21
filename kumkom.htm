@@ -8,8 +8,13 @@
     Status: <div id = "sta"> dead</div> <br>
     Context: <div id = "con"> nil</div>
     <button onclick="disp()">SHOW</button>
+    <br>
+    <button onclick="mheeme()">Meme</button>
     <script>
         const kumkom = "He has no style";
+        function mheeme() {
+            document.body.innerHTML += "<br><iframe width = '300' height = 300 id = 'pic' src='Resources/COVFEFE.png' frameborder='0'></iframe>";
+        }
         function disp() {
             document.getElementById("hd").innerHTML = kumkom;
             //document.writeln("<button onclick = 'disco()'>Disco</button>");
