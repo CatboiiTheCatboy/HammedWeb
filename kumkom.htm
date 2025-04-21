@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 id = "hd"></h1>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    Status: <div id = "sta"> dead</div> <br>
+    Context: <div id = "con"> nil</div>
+    <button onclick="disp()">SHOW</button>
+    <script>
+        const kumkom = "He has no style";
+        function disp() {
+            document.getElementById("hd").innerHTML = kumkom;
+            //document.writeln("<button onclick = 'disco()'>Disco</button>");
+            document.body.innerHTML += "<br><button onclick = 'disco()'>Disco</button>";
+        }
+        function disco() {
+            const r = Math.floor(Math.random() * 255);
+            const g = Math.floor(Math.random() * 255);
+            const b = Math.floor(Math.random() * 255);
+            document.getElementById("hd").style.color = `rgb(${r}, ${g}, ${b})`;
+        }
+    </script>
+</body>
+</html>

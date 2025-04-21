@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "Resources/blus.css">
+</head>
+<body>
+	<div id = "navb"></div>
+	<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {document.getElementById('navb').innerHTML = data;});
+    </script>
+    <div id = "main">
+        <iframe width = "300" height = 300 id = "pic" src="Resources/COVFEFE.png" frameborder="0"></iframe>
+        <div>
+            <h2>The walk-free shop</h2>
+                Start scrolling for something new to your collection today.
+                Want a mug with the picture of a common spider?
+            <br><br>
+            <a href="">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>
